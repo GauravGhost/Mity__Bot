@@ -6,12 +6,12 @@ const { generatePlayersLength } = require("./utils/utils");
 bot.on('ready', async (client) => {
     console.log(`${settings.botName}(${client}) is now online in ${settings.roomName} with ${await generatePlayersLength(bot)} players.`);
     await bot.player.teleport(client, settings.coordinates.x, settings.coordinates.y, settings.coordinates.z);
-  });
+});
 
 // Event emitted when an error occurs within the package.
 bot.on('error', (error) => {
     console.error('Error occurred:', error);
-    bot.reconnect(token, room);
+    bot.reconnect(TOKEN_ID, ROOM_ID);
   });
 
 bot.login(TOKEN_ID, ROOM_ID);

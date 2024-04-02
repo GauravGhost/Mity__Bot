@@ -75,12 +75,7 @@ const teleportUser = async (client, message, user) => {
 }
 
 const test = async (client, message, user) => {
-  try{
-    console.log(await client.player.permissions.get(user.id));
-  }
-  catch(err){
-    console.log(err);
-  }
+    console.log(await client.player.backpac.get(settings.botId)); 
 }
 
 module.exports = {
