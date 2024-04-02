@@ -1,6 +1,6 @@
 const { TOKEN_ID, ROOM_ID } = require("./config/server.config");
 const bot = require("./client");
-const {settings} = require('./config/settings.config');
+const {settings} = require('./config/server.config');
 const { generatePlayersLength } = require("./utils/utils");
 
 bot.on('ready', async (client) => {

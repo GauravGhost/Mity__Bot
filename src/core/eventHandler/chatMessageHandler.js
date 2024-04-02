@@ -1,4 +1,4 @@
-const { settings } = require('../../config/settings.config')
+const { settings } = require('../../config/server.config')
 const { getRandomEmote } = require('../../utils/utils')
 
 const chatMessageHandler = async (user, message, client) => {
